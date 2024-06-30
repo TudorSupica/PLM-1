@@ -878,6 +878,175 @@
 				)
 			)
 		)
+		(symbol "Device:LED"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "LED"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Light emitting diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "LED diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LED_0_1"
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LED_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Device:R"
 			(pin_numbers hide)
 			(pin_names
@@ -1732,6 +1901,12 @@
 		(uuid "1a96d75b-2c79-499f-932b-dc3a0949b256")
 	)
 	(junction
+		(at 43.18 109.22)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4bc8ab8c-412d-436d-8d19-b0ad2743654c")
+	)
+	(junction
 		(at 52.07 109.22)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1748,6 +1923,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7558e963-d892-4f99-a3cb-175daed62fd1")
+	)
+	(junction
+		(at 43.18 99.06)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "98186b3c-4b6b-42f3-b0fa-9cce648e90e5")
 	)
 	(junction
 		(at 156.21 97.79)
@@ -1871,6 +2052,16 @@
 	)
 	(wire
 		(pts
+			(xy 40.64 109.22) (xy 43.18 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d4dd711-cc1a-4ae9-b16e-90f008cf7fde")
+	)
+	(wire
+		(pts
 			(xy 217.17 97.79) (xy 218.44 97.79)
 		)
 		(stroke
@@ -1938,6 +2129,16 @@
 			(type default)
 		)
 		(uuid "1c325c14-ffe8-45bb-a6a5-a3052f0203c9")
+	)
+	(wire
+		(pts
+			(xy 30.48 99.06) (xy 43.18 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "21533e5f-35ce-4ad6-bf4b-ee71a38e44ea")
 	)
 	(wire
 		(pts
@@ -2131,6 +2332,16 @@
 	)
 	(wire
 		(pts
+			(xy 33.02 109.22) (xy 30.48 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "544b865d-7dd1-413d-a5b5-e7d36b28adc8")
+	)
+	(wire
+		(pts
 			(xy 95.25 86.36) (xy 115.57 86.36)
 		)
 		(stroke
@@ -2218,6 +2429,16 @@
 			(type default)
 		)
 		(uuid "69950ff9-5f19-481d-97c0-d5d72c0ae4c5")
+	)
+	(wire
+		(pts
+			(xy 30.48 109.22) (xy 30.48 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c0879ed-9f61-442c-be8e-1d511cde64a5")
 	)
 	(wire
 		(pts
@@ -2378,6 +2599,16 @@
 			(type default)
 		)
 		(uuid "9fc6d38d-a5fc-48e3-b18d-9175fe894c6e")
+	)
+	(wire
+		(pts
+			(xy 30.48 100.33) (xy 30.48 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a030f327-51c6-4d48-bde3-37624fe6d0b2")
 	)
 	(wire
 		(pts
@@ -2686,7 +2917,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
 			(at 53.848 104.14 90)
 			(effects
 				(font
@@ -2753,7 +2984,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Rect_L4.6mm_W3.0mm_P2.50mm_MKS02_FKP02"
 			(at 134.62 93.0148 0)
 			(effects
 				(font
@@ -2950,7 +3181,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Potentiometer_THT:Potentiometer_TT_P0915N"
 			(at 140.97 97.79 0)
 			(effects
 				(font
@@ -3020,7 +3251,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_THT:SW_PUSH_E-Switch_FS5700DP_DPDT"
+		(property "Footprint" "Button_Switch_THT:SW_Slide-03_Wuerth-WS-SLTV_10x2.5x6.4_P2.54mm"
 			(at 120.65 86.36 0)
 			(effects
 				(font
@@ -3166,7 +3397,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
 			(at 127.508 113.03 90)
 			(effects
 				(font
@@ -3298,7 +3529,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
 			(at 176.53 109.728 90)
 			(effects
 				(font
@@ -3335,6 +3566,75 @@
 			(project "PLM-Mixer"
 				(path "/455d42ee-a4cb-4b68-984b-7d2becbe98bb"
 					(reference "R7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 36.83 109.22 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "34c3cf80-4061-44cb-a086-9f19504df8a7")
+		(property "Reference" "R12"
+			(at 38.1 109.22 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1KΩ"
+			(at 38.862 106.934 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
+			(at 36.83 107.442 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 36.83 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 36.83 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c152aad4-5c40-4abe-a1ac-a078b4a34181")
+		)
+		(pin "2"
+			(uuid "670c988d-7dc5-465b-802a-19deeeb2a28c")
+		)
+		(instances
+			(project "PLM-Mixer"
+				(path "/455d42ee-a4cb-4b68-984b-7d2becbe98bb"
+					(reference "R12")
 					(unit 1)
 				)
 			)
@@ -3430,7 +3730,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x06_P1.27mm_Horizontal"
 			(at 88.9 96.52 0)
 			(effects
 				(font
@@ -3576,7 +3876,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Potentiometer_THT:Potentiometer_TT_P0915N"
 			(at 231.14 104.14 0)
 			(effects
 				(font
@@ -3646,7 +3946,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
 			(at 151.13 96.012 90)
 			(effects
 				(font
@@ -3713,7 +4013,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Rect_L4.6mm_W3.0mm_P2.50mm_MKS02_FKP02"
 			(at 227.33 96.8248 0)
 			(effects
 				(font
@@ -3780,7 +4080,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
 			(at 161.29 99.568 90)
 			(effects
 				(font
@@ -3982,7 +4282,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical"
 			(at 245.11 104.14 0)
 			(effects
 				(font
@@ -4049,7 +4349,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
 			(at 151.13 85.852 90)
 			(effects
 				(font
@@ -4116,7 +4416,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_THT:SW_Slide-03_Wuerth-WS-SLTV_10x2.5x6.4_P2.54mm"
 			(at 105.41 106.68 0)
 			(effects
 				(font
@@ -4197,7 +4497,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
 			(at 53.848 93.98 90)
 			(effects
 				(font
@@ -4410,7 +4710,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
 			(at 119.888 113.03 90)
 			(effects
 				(font
@@ -4479,7 +4779,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Radial_D5.0mm_H7.0mm_P2.00mm"
 			(at 42.2148 100.33 0)
 			(effects
 				(font
@@ -4699,7 +4999,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Potentiometer_THT:Potentiometer_TT_P0915N"
 			(at 209.55 107.95 0)
 			(effects
 				(font
@@ -4769,7 +5069,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
 			(at 190.5 99.568 90)
 			(effects
 				(font
@@ -4836,7 +5136,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
 			(at 151.13 106.172 90)
 			(effects
 				(font
@@ -4965,6 +5265,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:LED")
+		(at 30.48 104.14 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "df5d3454-8043-49f1-ad75-cb96e3c3b294")
+		(property "Reference" "D1"
+			(at 26.67 104.4574 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "LED"
+			(at 26.67 106.9974 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_THT:LED_D5.0mm_Clear"
+			(at 30.48 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 30.48 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 30.48 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "5ea77456-7a19-447b-8478-c3c4eb9066eb")
+		)
+		(pin "1"
+			(uuid "2bd6609c-d881-4df7-b8ed-a83451921e8f")
+		)
+		(instances
+			(project ""
+				(path "/455d42ee-a4cb-4b68-984b-7d2becbe98bb"
+					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Potentiometer")
 		(at 140.97 87.63 0)
 		(unit 1)
@@ -4989,7 +5359,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Potentiometer_THT:Potentiometer_TT_P0915N"
 			(at 140.97 87.63 0)
 			(effects
 				(font
@@ -5061,7 +5431,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
 			(at 112.268 113.03 90)
 			(effects
 				(font
@@ -5128,7 +5498,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Rect_L4.6mm_W3.0mm_P2.50mm_MKS02_FKP02"
 			(at 134.62 103.1748 0)
 			(effects
 				(font
